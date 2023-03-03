@@ -6,16 +6,66 @@
     <title>Sample Form</title>
 </head>
 <body>
-    <form action="" method="get">
-        
-    <label for="name">Name</label>
-    <input type="text">
-
-    <label for="password">Password</label>
-    <input type="text">
-     
-    <button>Submit</button>
-
+    <form action="results.html" method="get">
+    <div>
+        <label for = "name">Name</label>
+        <input name = "name" type="text" id = 'name' placeholder="username" required> 
+        <!-- "value" is also an attribute of input tag which can be used to give default value to field -->
+    </div> 
+    <div>
+        <label for="email">Email</label>
+        <input name="email" type="email" required id="email">
+    </div>  
+    <div>
+        <label for="age">Age</label>
+        <input type="number" id = "age" name="age" min="1" max="100" step="1">
+    </div>
+    <div>
+        <label for="date">DOB</label>
+        <input type="date" name = "date" id="date" min="1999-02-13">
+        <!-- min date has to be entered in this specified format only -->
+    </div>
+    <div>
+        Favourite Food:
+        <div>
+            <label for="banana">Banana</label>
+            <input type="checkbox" name="banana" id="banana">
+        </div>
+        <div>
+            <label for="apple">Apple</label>
+            <input type="checkbox" name="apple" id="apple">
+        </div>
+    </div>
+    <div>
+        Gender:
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+        </div>
+        <div>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+        </div>
+    </div>
+    <div>
+        <label for="eyeColor">Eye Color</label>
+        <select name="eyeColor" id="eyeColor">
+            <option value="Blue"> Blue</option>
+            <option label="brown" value="Brown"> Brown</option>
+            <!-- two ways to give option value -->
+        </select>
+    </div>
+    <div>
+        <label for="bio">Bio</label>
+        <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+        <label for = "password">Password</label>
+        <input name = 'password' type="password" id = 'password' required>
+    </div>
+    <button type = "reset">Reset</button>
+    <button type = "submit">Submit</button>
+    
     </form>
 </body>
 </html>
