@@ -6,7 +6,7 @@
     <title>Sample Form</title>
 </head>
 <body>
-    <form action="results.html" method="get">
+    <form action="results.html" method="get" enctype="multipart/form-data">
     <div>
         <label for = "name">Name</label>
         <input name = "name" type="text" id = 'name' placeholder="username" required> 
@@ -58,6 +58,23 @@
     <div>
         <label for="bio">Bio</label>
         <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+    </div>
+    <input type="hidden" name="hidden" id="hidden" value = " Hidden data sent with form">
+    <div>
+        <label for="file">File</label>
+        <input type="file" id="file" name="file">
+    </div>
+    <div>
+        <label for="phone">Phone No:</label>
+        <input type="tel" id="phone" name="phone">
+    </div>
+    <div>
+        <label for="url">URL</label>
+        <input type="url" name="url" id="url">
+    </div>
+    <div>
+        <label for="color">Color Selector:</label>
+        <input type="color" name="color" id="color">
     </div>
     <div>
         <label for = "password">Password</label>
